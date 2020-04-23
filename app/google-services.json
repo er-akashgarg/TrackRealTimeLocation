@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "430634159667",
+    "firebase_url": "https://trackrealtimelocation.firebaseio.com",
+    "project_id": "trackrealtimelocation",
+    "storage_bucket": "trackrealtimelocation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430634159667:android:971d4677ea9d4fb6795d46",
+        "android_client_info": {
+          "package_name": "com.akash.trackrealtimelocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430634159667-48er2heahqd99fvpk2na1ah5ts2jv604.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8q7yVYWiSZFwXdfMW6mZe0JtarieYJK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430634159667-48er2heahqd99fvpk2na1ah5ts2jv604.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
