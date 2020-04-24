@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
 
-    private val TAG = "PermissionDemo"
+    private val TAG = "MainActivity"
     private val LOCATION_REQUEST_CODE = 101
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +36,7 @@ class MainActivity : BaseActivity() {
     private fun setupPermissions() {
         val permission = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
         if (permission != PackageManager.PERMISSION_GRANTED) {
-            Log.i(TAG, "Permission to Location denied")
+            Log.d(TAG, "Permission to Location denied")
             makeRequest()
         }
     }

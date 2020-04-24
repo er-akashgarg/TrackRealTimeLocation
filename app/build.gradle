@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.akash.trackrealtimelocation"
         minSdkVersion 16
@@ -24,29 +24,32 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //supports lib
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    /* SDP Dependencies for UI to All compatible devices */
+    //ktx
+    implementation "androidx.core:core-ktx:1.2.0"
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+
+
+    // SDP Dependencies for UI to All compatible devices
     implementation "com.intuit.sdp:sdp-android:$sdp_lib_version"
 
     //kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    //ktx
-    implementation "androidx.core:core-ktx:1.2.0"
-    implementation 'com.google.firebase:firebase-analytics:17.3.0'
-
     // Google play services
-    implementation 'com.google.android.gms:play-services-location:17.0.0'
-    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation "com.google.android.gms:play-services-location:$gms_play_version"
+    implementation "com.google.android.gms:play-services-maps:$gms_play_version"
 
     // LiveData
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
 
     
 }
